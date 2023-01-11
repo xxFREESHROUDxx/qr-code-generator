@@ -1,0 +1,161 @@
+/* .qr-code-generator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.input-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.input-field {
+  padding: 10px;
+  font-size: 18px;
+  width: 100%;
+  margin-right: 10px;
+  border: none;
+  border-bottom: 2px solid gray;
+}
+
+.generate-btn-container {
+  margin-top: 20px;
+}
+
+.generate-btn {
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin-bottom: 3.6rem;
+}
+
+.qr-code-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+} */
+
+body {
+  background-color: #f5f5f5;
+}
+
+.qr-code-generator {
+  width: 80%;
+  max-width: 800px;
+  margin: 50px auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.input-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.label {
+  font-size: 18px;
+  font-weight: 600;
+  margin-right: 20px;
+  color: #333;
+}
+
+.input-field {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.input-field:focus {
+  border-color: #4caf50;
+  box-shadow: 0px 0px 8px rgba(76, 175, 80, 0.5);
+}
+
+.generate-btn-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.generate-btn,
+.print-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.generate-btn {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.generate-btn:hover {
+  background-color: #3e8e41;
+}
+
+.print-btn {
+  background-color: #2196f3;
+  color: #fff;
+  margin-left: 20px;
+}
+
+.print-btn:hover {
+  background-color: #1976d2;
+}
+
+.error-message {
+  color: #f44336;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: right;
+}
+
+.qr-code {
+  margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+@media print {
+  .qr-code-print {
+    display: block;
+  }
+  .input-container {
+    display: none;
+  }
+}
