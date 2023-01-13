@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import QRCode from 'qrcode.react';
+// import QRCode from 'qrcode.react';
+import QRCode from 'react-qr-code';
 import './QRCodeGenerator.css';
 
 const QRCodeGenerator = () => {
