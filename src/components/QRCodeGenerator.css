@@ -159,3 +159,28 @@ body {
     display: none;
   }
 }
+
+.qr-code-generator {
+  width: 80%;
+  max-width: 800px;
+  margin: 50px auto;
+  /* ... */
+}
+
+/* Apply these styles when the screen width is less than 600px */
+@media only screen and (max-width: 600px) {
+  .qr-code-generator {
+    width: 100%;
+    padding: 20px;
+  }
+  .input-container {
+    width: 100%;
+    flex-direction: column;
+  }
+  .input-field {
+    width: 100%;
+  }
+  .qr-code-container {
+    width: 100%;
+  }
+}
